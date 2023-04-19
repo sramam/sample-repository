@@ -1,0 +1,33 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        Int         @id @default(autoincrement())
+  name      String
+  email     String      @unique
+  role      String
+  classroom Classroom?  @relation(name: "teacher")
+  Classroom Classroom[]
+}
+
+model Classroom {
+  id           String    @id @unique
+  sessions     Session[]
+  teacherEmail String
+  teacher      User      @relation(fields: [teacherId], references: [id], name: "teacher")
+  teacherId    Int       @unique
+  tutor        User?     @relation(fields: [userId], references: [id])
+  userId       Int?
+}
+
+model Session {
+  id          Int       @id @default(autoincrement())
+  classroomId String
+  classroom   Classroom @relation(fields: [classroomId], references: [id])
+}

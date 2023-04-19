@@ -1,0 +1,34 @@
+on:
+  pull_request:
+    branches:
+      - "*"
+      - "!gh-pages/*"
+      - "!releases/*"
+  push:
+    branches:
+      - "*"
+      - "!gh-pages/*"
+      - "!releases/*"
+name: ci
+
+jobs:
+  action:
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [18]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    name: build.${{ matrix.os }}.${{ matrix.node }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+      - run: node --version
+      - run: npm --version
+      - run: npm ci
+      - run: npm run test -- --max-workers 50% --ci
+        env:
+          IS_CI: true
