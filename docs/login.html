@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Protected Page</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 100px;
+		}
+		input {
+			margin: 10px;
+			padding: 5px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+			width: 300px;
+			text-align: center;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100px;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form id="login-form">
+		<label for="password">Enter Password:</label>
+		<input type="password" id="password" name="password" required>
+		<button type="submit">Submit</button>
+	</form>
+
+	<script>
+		// Check if the user has already authenticated
+		if (localStorage.getItem("authenticated") === "true") {
+			// Redirect to the protected page
+			window.location.href = "protected.html";
+		}
+
+		// Store the referring page in session storage
+		if (document.referrer && document.referrer !== window.location.href) {
+			sessionStorage.setItem("referringPage", document.referrer);
+		}
+
+		// Listen for form submission
+		document.getElementById("login-form").addEventListener("submit", function(event) {
+			event.preventDefault();
+
+			// Get the password input value
+			var password = document.getElementById("password").value;
+
+			// Check if the password is correct
+			if (password === "mypassword") {
+				// Store the authentication status in local storage
+				localStorage.setItem("authenticated", "true");
+
+				// Redirect to the referring page or the protected page
+				var referringPage = sessionStorage.getItem("referringPage") || "protected.html";
+				window.location.href = referringPage;
+			} else {
+				// Display an error message
+				alert("Incorrect password. Please try again.");
+			}
+		});
+	</script>
+</body>
+</html>
