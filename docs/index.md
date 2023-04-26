@@ -1,3 +1,4 @@
+<meta name="robots" content="noindex, nofollow">
 # Context
 
 SampleCompany provided [this problem definition(redacted)]() as part of System Design Question. And the following prompt:

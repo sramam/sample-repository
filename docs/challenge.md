@@ -1,10 +1,4 @@
-<script>
-	if (localStorage.getItem("authenticated") !== "true") {
-		// Redirect to the login page
-		window.location.href = "login.html";
-	}
-</script>
-
+<meta name="robots" content="noindex, nofollow">
 ## Challenge Prompt
 
 Slack is a best-in-class SaaS communication tool for companies and organizations of any size to communicate within their team and across other teams. The data hierarchy of an Organization’s Slack Workspace can be considered in the form below.
