@@ -1,6 +1,3 @@
-<head>
-<meta name="robots" content="noindex, nofollow,hello">
-</head>
 ## Challenge Prompt
 
 Slack is a best-in-class SaaS communication tool for companies and organizations of any size to communicate within their team and across other teams. The data hierarchy of an Organization’s Slack Workspace can be considered in the form below.
@@ -197,3 +194,12 @@ interface Message {
   createdAt: Date;
 }
 ```
+
+## Evaluation Criteria
+Some considerations for how your response will be evaluated are:
+
+1. How would you update the application infrastructure to accommodate serving a user base of 1 million yearly users who generate 10 million messages per year? How would your solution scale to serving 10 million users who generate 100 million messages per year?
+2. How would you change the existing data models to accommodate multi-tenant inter-connectivity?
+3. What potential back-end API endpoints (which may have not been specifically outlined in the aforementioned challenge prompt) on the backend API server may need to be adjusted?
+4. What authorization controls might you consider as adjustments to APIs that might be enabling tenant inter-connectivity, in the paradigm where members of different tenants may have the context to be authorized to use those endpoints?
+5. How would you structure the overall migration plan of accomplishing the introduction of such a feature, on the front-end and back-end, with a team of engineers focused on accomplishing this endeavor alongside you?
