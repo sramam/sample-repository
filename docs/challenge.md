@@ -1,4 +1,6 @@
+<head>
 <meta name="robots" content="noindex, nofollow">
+</head>
 ## Challenge Prompt
 
 Slack is a best-in-class SaaS communication tool for companies and organizations of any size to communicate within their team and across other teams. The data hierarchy of an Organization’s Slack Workspace can be considered in the form below.
