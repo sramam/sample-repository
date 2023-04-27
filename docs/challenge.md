@@ -17,16 +17,15 @@
 
 ---
 
-Links:
-- [Home](https://sramam.github.io/work-sample/) 
-- [Challenge](https://sramam.github.io/work-sample/challenge)
-- [Response](https://sramam.github.io/work-sample/solution)
-- [zero-downtime migration](https://sramam.github.io/work-sample/zero-downtime-migrations#zero-downtime-migrations)
-
-Git Repo:
-- [Source Code](https://github.com/sramam/work-sample)
-- [Readme](https://github.com/sramam/work-sample#readme)
-- [Code Design](https://github.com/sramam/work-sample/blob/main/DESIGN.md)
+Links
+| [Home](https://sramam.github.io/work-sample/)
+| [Challenge](https://sramam.github.io/work-sample/challenge)
+| [Response](https://sramam.github.io/work-sample/solution)
+| [zero-downtime migration](https://sramam.github.io/work-sample/zero-downtime-migrations#zero-downtime-migrations)
+|| Git Repo
+| [Source Code](https://github.com/sramam/work-sample)
+| [Readme](https://github.com/sramam/work-sample#readme)
+| [Code Design](https://github.com/sramam/work-sample/blob/main/DESIGN.md)
 
 ---
 
@@ -258,15 +257,15 @@ How would you structure the overall migration plan of accomplishing the introduc
 
 ---
 
-Links:
-- [Home](https://sramam.github.io/work-sample/) 
-- [Challenge](https://sramam.github.io/work-sample/challenge)
-- [Response](https://sramam.github.io/work-sample/solution)
-- [zero-downtime migration](https://sramam.github.io/work-sample/zero-downtime-migrations#zero-downtime-migrations)
+Links
+| [Home](https://sramam.github.io/work-sample/)
+| [Challenge](https://sramam.github.io/work-sample/challenge)
+| [Response](https://sramam.github.io/work-sample/solution)
+| [zero-downtime migration](https://sramam.github.io/work-sample/zero-downtime-migrations#zero-downtime-migrations)
+|| Git Repo
+| [Source Code](https://github.com/sramam/work-sample)
+| [Readme](https://github.com/sramam/work-sample#readme)
+| [Code Design](https://github.com/sramam/work-sample/blob/main/DESIGN.md)
 
-Git Repo:
-- [Source Code](https://github.com/sramam/work-sample)
-- [Readme](https://github.com/sramam/work-sample#readme)
-- [Code Design](https://github.com/sramam/work-sample/blob/main/DESIGN.md)
 
 ---
