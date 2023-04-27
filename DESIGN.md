@@ -1,6 +1,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
 - [Design of the authorization POC](#design-of-the-authorization-poc)
   - [Scope of POC](#scope-of-poc)
@@ -18,9 +19,9 @@
 
 ---
 
-- [Home](./index.md) 
-- [Challenge](./challenge.md)
-- [Response](./solution.md)
+- [Home](https://github.com/sramam/work-sample)
+- [Challenge](https://github.com/sramam/work-samplechallenge.md)
+- [Response](https://github.com/sramam/work-samplesolution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
@@ -44,14 +45,16 @@ For this POC, we'll implement a simplified take on "Multi-tenant Connectivity"
 > on the development of Slack Shared Channels.
 
 ### Functional Requirements
+
 - There are two categories of people
 - One belongs to an Org of some sort.
 - The other is an "outsider" who can be invited
 - One added to the "Org", they can both access a shared resource
 
 #### Assumptions
-Our goal is to demonstrate that only valid roles can add/invite. 
-We'll skip the invitation flow, and assume `add === accepting invite`. 
+
+Our goal is to demonstrate that only valid roles can add/invite.
+We'll skip the invitation flow, and assume `add === accepting invite`.
 
 ## Implementation Notes
 
@@ -61,12 +64,12 @@ We'll skip the invitation flow, and assume `add === accepting invite`.
 - Implement the authorization primitives to satisfy the simplified API below
 
 ### Database Schema
+
 The relationship highlighted in red is the one we'll apply our oso policy to.
 
 ![SampleCompany Schema](/prisma/schema.prisma.jpg)
 
 ### Authorization rules
-
 
 - `User`'s have one of two roles: `["teacher", "tutor"]`
 - `teacher`'s who _belong_ to a `ClassRoom` can _add_tutor_ `tutor`'s
@@ -99,30 +102,36 @@ We will implement the API as authz primitives:
     teacher: hayes@example.com
 
 #### Expected output
-  teacher adding tutor ro assigned classroom
-  - SUCCESS: add_tutor grady@example.com by white@example.com to English
-  - SUCCESS: add_tutor roberts@example.com by hayes@example.com to Math
 
-  teacher adding tutor to unassigned classroom
-  - FAILED: add_tutor grady@example.com by white@example.com to Math
-  
-  tutors can create_sessions for classes they have been added to
-  - SUCCESS: create_session by grady@example.com to English
-  - SUCCESS: create_session by roberts@example.com to Math
-  
-  teachers can create_sessions
-  - SUCCESS: create_session by white@example.com to English
-  - SUCCESS: create_session by hayes@example.com to Math
-  
-  teachers/tutors cannot create_sessions for classes they have NOT been added to
-  - FAILED: create_session by roberts@example.com to English
-  - FAILED: create_session by white@example.com to Math
-    
+teacher adding tutor ro assigned classroom
+
+- SUCCESS: add_tutor grady@example.com by white@example.com to English
+- SUCCESS: add_tutor roberts@example.com by hayes@example.com to Math
+
+teacher adding tutor to unassigned classroom
+
+- FAILED: add_tutor grady@example.com by white@example.com to Math
+
+tutors can create_sessions for classes they have been added to
+
+- SUCCESS: create_session by grady@example.com to English
+- SUCCESS: create_session by roberts@example.com to Math
+
+teachers can create_sessions
+
+- SUCCESS: create_session by white@example.com to English
+- SUCCESS: create_session by hayes@example.com to Math
+
+teachers/tutors cannot create_sessions for classes they have NOT been added to
+
+- FAILED: create_session by roberts@example.com to English
+- FAILED: create_session by white@example.com to Math
+
 ---
 
-- [Home](./index.md) 
-- [Challenge](./challenge.md)
-- [Response](./solution.md)
+- [Home](https://github.com/sramam/work-sample)
+- [Challenge](https://github.com/sramam/work-samplechallenge.md)
+- [Response](https://github.com/sramam/work-samplesolution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
