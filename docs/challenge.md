@@ -17,9 +17,9 @@
 
 ---
 
-- [Home](https://github.com/sramam/work-sample) 
-- [Challenge](https://github.com/sramam/work-samplechallenge.md)
-- [Response](https://github.com/sramam/work-samplesolution.md)
+- [Home](https://sramam.github.io/work-sample/) 
+- [Challenge](https://sramam.github.io/work-sample/challenge.md)
+- [Response](https://sramam.github.io/work-sample/solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
@@ -232,7 +232,7 @@ How would you update the application infrastructure to accommodate serving a use
 ### Question 2. 
 How would you change the existing data models to accommodate multi-tenant inter-connectivity?
 
-[Response](./solution.md#2-authorization)
+[Response](./solution.md#2-datamodel)
 
 ### Question 3.
 What potential back-end API endpoints (which may have not been specifically outlined in the aforementioned challenge prompt) on the backend API server may need to be adjusted?
@@ -251,9 +251,9 @@ How would you structure the overall migration plan of accomplishing the introduc
 
 ---
 
-- [Home](https://github.com/sramam/work-sample) 
-- [Challenge](https://github.com/sramam/work-samplechallenge.md)
-- [Response](https://github.com/sramam/work-samplesolution.md)
+- [Home](https://sramam.github.io/work-sample/) 
+- [Challenge](https://sramam.github.io/work-sample/challenge.md)
+- [Response](https://sramam.github.io/work-sample/solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---

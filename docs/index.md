@@ -15,9 +15,9 @@
 
 ---
 
-- [Home](https://github.com/sramam/work-sample) 
-- [Challenge](https://github.com/sramam/work-samplechallenge.md)
-- [Response](https://github.com/sramam/work-samplesolution.md)
+- [Home](https://sramam.github.io/work-sample/) 
+- [Challenge](https://sramam.github.io/work-sample/challenge.md)
+- [Response](https://sramam.github.io/work-sample/solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
@@ -47,12 +47,14 @@ See this [for a fuller description of the problem](./challenge.md)
 
 Since a rabbit-hole was entered with the assignment, a highlights reel in summary:
 
+
 ### 1. POC 
   [github link](https://github.com/sramam/work-sample)
-  - [design doc](../DESIGN.md)
+  - [design doc](https://github.com/sramam/work-sample/DESIGN.md)
+  - [Read me](https://github.com/sramam/work-sample/README.md)
   - Uses [oso](https://www.osohq.com/) as the authorization library
-  - Implements the [smallest possible POC of the policy requirement](../gsb.polar)
-  - Accomplishes [100% coverage](../README.md#quality)
+  - Implements the [smallest possible POC of the policy requirement](https://github.com/sramam/work-sample/gsb.polar)
+  - Accomplishes [100% coverage](https://github.com/sramam/work-sample/README.md#quality)
 
 ### 2. Response to Challenge
   - [Approach](./solution.md#approach)
