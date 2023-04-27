@@ -16,10 +16,12 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
+
 - [Home](./index.md) 
 - [Challenge](./challenge.md)
 - [Response](./solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
+
 ---
 
 ## Challenge Prompt
@@ -248,8 +250,10 @@ How would you structure the overall migration plan of accomplishing the introduc
 [Response](./solution.md#5-migration-plan)
 
 ---
+
 - [Home](./index.md) 
 - [Challenge](./challenge.md)
 - [Response](./solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
+
 ---

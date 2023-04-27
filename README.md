@@ -12,7 +12,16 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-[![ci](https://github.com/sramam/gsb-oso/actions/workflows/ci.yml/badge.svg)](https://github.com/sramam/gsb-oso/actions/workflows/ci.yml) [home](https://sramam.github.io/work-sample/)
+---
+
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+
+---
+
+[![ci](https://github.com/sramam/gsb-oso/actions/workflows/ci.yml/badge.svg)](https://github.com/sramam/gsb-oso/actions/workflows/ci.yml)
 
 
 # SampleCompany - Authorization POC
@@ -90,3 +99,12 @@ Please see the [design doc](./DESIGN.md) to understand the
 implementation details. You can of course also [read the code](./src/api.test.ts)!
 
 Thank you for reading this far!
+
+---
+
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+
+---

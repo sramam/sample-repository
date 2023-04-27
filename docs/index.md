@@ -57,8 +57,10 @@ Since a rabbit-hole was entered with the assignment, a highlights reel in summar
   - [Project Plan](./solution.md#5-migration-plan)
 
 ---
+
 - [Home](./index.md) 
 - [Challenge](./challenge.md)
 - [Response](./solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
+
 ---

@@ -16,6 +16,15 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+---
+
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+
+---
+
 # Design of the authorization POC
 
 SampleCompany is a service that provides a secure, customized platform
@@ -109,3 +118,11 @@ We will implement the API as authz primitives:
   - FAILED: create_session by roberts@example.com to English
   - FAILED: create_session by white@example.com to Math
     
+---
+
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+
+---

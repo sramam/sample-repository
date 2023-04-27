@@ -35,10 +35,12 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
+
 - [Home](./index.md) 
 - [Challenge](./challenge.md)
 - [Response](./solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
+
 ---
 
 # Response
@@ -398,4 +400,13 @@ This is also available as a [github project view here](https://github.com/users/
 - End-to-End testing. Is current capability sufficient?
 - Load testing. Is current capability sufficient?
 - Deployment mechanics. We are assuming existing CI/CD pipelines are sufficient.
+---
+
+---
+
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+
 ---

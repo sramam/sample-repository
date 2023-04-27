@@ -12,10 +12,12 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
+
 - [Home](./index.md) 
 - [Challenge](./challenge.md)
 - [Response](./solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
+
 ---
 
 # Zero Downtime Migrations 
@@ -120,8 +122,10 @@ a solution that works for the general migration use-case.
 With that we can go back to our [regular programming](./index.md).
 
 ---
+
 - [Home](./index.md) 
 - [Challenge](./challenge.md)
 - [Response](./solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
+
 ---
