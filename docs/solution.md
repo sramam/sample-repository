@@ -95,7 +95,7 @@ of the issues involved and how we might address them.
 Authorization is a complex domain, with a very large surface area. Like security, it's usually
 very unwise to DIY a solution here. We should select one of the [many options](https://www.libhunt.com/r/oso) available.
 
-This repo originally demonstrated how to use [oso](https://github.com/osohq/oso) to implement the authorization layer, however other choices are equally viable. Please see [here](../DESIGN.md) for more details on an oso based design.
+This repo originally demonstrated how to use [oso](https://github.com/osohq/oso) to implement the authorization layer, however other choices are equally viable. Please see [here](https://github.com/sramam/work-sample/blob/main/DESIGN.md) for more details on an oso based design.
 
 We will assume that one such library will be used to decouple the authZ needs of the application.
 Such authZ libraries have the advantage of splitting the authZ problem into two sub-parts:
