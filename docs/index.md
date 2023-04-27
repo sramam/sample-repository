@@ -48,13 +48,16 @@ See this [for a fuller description of the problem](./challenge.md)
 
 ## The Response
 
+A high level view of the system design. [More details here](./solution.md)
+
 ![app-arch](./app-arch.jpg)
+
 
 Since a rabbit-hole was entered with the assignment, a highlights reel in summary:
 
 
 ### 1. POC 
-  [github link](https://github.com/sramam/work-sample)
+This POC was implemented pre-interview, from a problem stated in the job description (...I had some time to spare). [github link](https://github.com/sramam/work-sample)
   - [design doc](https://github.com/sramam/work-sample/blob/main/DESIGN.md)
   - [Read me](https://github.com/sramam/work-sample#readme)
   - Uses [oso](https://www.osohq.com/) as the authorization library
@@ -62,14 +65,20 @@ Since a rabbit-hole was entered with the assignment, a highlights reel in summar
   - Accomplishes [100% coverage](https://github.com/sramam/work-sample#quality)
 
 ### 2. Response to Challenge
+During the interview process, a more formal system design assignment was requested. This aligned well with the
+POC implemented above, but had enough differences to require some effort.
+
   - [Approach](./solution.md#approach)
   - [Design](./solution.md#design)
   - [Challenge Questions](./solution.md#responses-to-followup-questions)
 
 ### 3. Innovation/Creative engineering
+An example of solving by tacking the root of the problem instead of just treating the symptoms.
+
   - [Zero-downtime mongoDB migrations](./solution.md#1-db-schema-migrations)
 
 ### 4. Project Plan
+Preliminary project planning activity
   - [Project Plan](./solution.md#5-migration-plan)
 
 ---
