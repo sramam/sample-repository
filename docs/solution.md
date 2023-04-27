@@ -1,3 +1,39 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Response](#response)
+  - [Assumptions](#assumptions)
+  - [Approach](#approach)
+    - [1. DB Schema Migrations](#1-db-schema-migrations)
+    - [2. Authorization](#2-authorization)
+  - [Design](#design)
+    - [App Server](#app-server)
+    - [AuthZ Service](#authz-service)
+    - [Message Service](#message-service)
+  - [Resolvers](#resolvers)
+    - [The userId and resourceId are available within the request context.](#the-userid-and-resourceid-are-available-within-the-request-context)
+    - [The resourceId needs to be fetched from the DB before making a decision](#the-resourceid-needs-to-be-fetched-from-the-db-before-making-a-decision)
+  - [Responses to followup questions](#responses-to-followup-questions)
+    - [1. Scale](#1-scale)
+      - [1.a. The user base](#1a-the-user-base)
+      - [1.b. Messages](#1b-messages)
+    - [2. DataModel:](#2-datamodel)
+    - [3. API](#3-api)
+    - [4. authZ modifications on the API](#4-authz-modifications-on-the-api)
+    - [5. Migration plan](#5-migration-plan)
+      - [Tentative Dev Plan](#tentative-dev-plan)
+        - [Implementation goals:](#implementation-goals)
+      - [Integration & Load Testing](#integration--load-testing)
+        - [What?](#what)
+        - [How?](#how)
+      - [Deployment Plan](#deployment-plan)
+        - [What?](#what-1)
+        - [How?](#how-1)
+      - [Project Risk Factors](#project-risk-factors)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Response
 
 This is a response to the [challenge described here](./challenge.md).
@@ -67,7 +103,7 @@ With that preamble, we are finally ready to design the requested system.
 
 Since we have assumed that we are designing a system to fit SampleCompany's general parameters,
 we are using mongoDB and designing to a scale of about 10M users/100M messages on an yearly basis. 
-![infra design](./gsb-app-arch.jpg)
+![infra design](./app-arch.jpg)
 
 The current SampleCompany design is an App Server backed by a mongo DB instance. 
 This proposal adds:
@@ -153,7 +189,7 @@ export async function resolver(
 
 ## Responses to followup questions
 
-### 1. Scale
+### [1. Scale](./challenge.md#question-1)
 > How would you update the application infrastructure to accommodate serving a user base of 1 million yearly users who generate 10 million messages per year? How would your solution scale to serving 10 million users who generate 100 million messages per year?
 
 There are two sub-problems here -
@@ -187,7 +223,7 @@ The two exhibit very different read/write characteristics and should be handled 
 - As a design principle, we should avoid over-engineering this too early - in architecture or
   application complexity.
 
-### 2. DataModel
+### [2. DataModel](./challenge.md#question-2):
 > How would you change the existing data models to accommodate multi-tenant inter-connectivity?
 
 For the given data-model, we'd make the following additions:
@@ -269,7 +305,9 @@ For the given data-model, we'd make the following additions:
  }
 ```
 
-### 3. API
+
+### [3. API](./challenge.md#question-3)
+
 > What potential back-end API endpoints (which may have not been specifically outlined in the aforementioned challenge prompt) on the backend API server may need to be adjusted?
 
 From the API perspective, we will assume existing authN capability, allows authZ modifications can be completely contained to being server side. We do need to extend the API to allow the user to perform these two operations from the UI.
@@ -290,14 +328,15 @@ type Mutations {
 }
 ```
 
-### 4. authZ modifications on the API
+### [4. authZ modifications on the API](./challenge.md#question-4)
+
 > What authorization controls might you consider as adjustments to APIs that might be enabling tenant inter-connectivity, in the paradigm where members of different tenants may have the context to be authorized to use those endpoints?
 
 As stated in the discussion to #3 above, authZ modifications should not affect the API itself. 
 It's true that we need more APIs to enable different connectivity, however that is for additional capability to invite other workspaces/admins and accept invitations.
 Not by itself an authZ capability.
 
-### 5. Migration plan
+### [5. Migration plan](./challenge.md#question-5)
 
 At a high level, we will spell out the tasks, to help us scope the problem
 and possible team size. For the purposes of this exercise, we will assume that 
@@ -305,11 +344,51 @@ the additional work in terms of the infrastructure is to be minimized. We are
 piggy-backing on existing infra and only making minimal additions.
 
 #### Tentative Dev Plan
+
+##### Implementation goals:
+
+- The code should be written in a functional style to make testing easier
+- Test coverage goal should be 100% for all code added/modified
+
 The image below lays out a tentative dev-plan, demonstrating some of the parallelization that might be possible. 
 A more detailed plan would require a deeper analysis & estimation of the tasks.
 ![Dev plan](./dev-plan.jpg) 
 
 This is also available as a [github project view here](https://github.com/users/sramam/projects/2/views/3)
 
+---
+#### Integration & Load Testing
+
+##### What?
+
+- End-to-End integration tests to ensure we meet the requirements
+- Load tests to ensure we meet system design goals
+
+##### How?
+
+- TBD
+
+
+---
 #### Deployment Plan
-TBD.
+
+##### What?
+
+- DB migration testing - especially if we are introducing the zero-downtime upgrades, will have to be reasonably extensive
+- App migration staging
+- App migration
+
+##### How?
+
+- DB migration: Should be part of the new code base
+- App migration: Use current deployment mechanics?
+
+---
+#### Project Risk Factors
+
+- zero-downtime migrations is a new capability at the infra layer we are building and the largest risk to the project.
+- The rest of the implementation is reasonably straight-forward. A deeper dive into the existing code base and analysis of the team capabilities is required before we can articulate any risks.
+- End-to-End testing. Is current capability sufficient?
+- Load testing. Is current capability sufficient?
+- Deployment mechanics. We are assuming existing CI/CD pipelines are sufficient.
+---

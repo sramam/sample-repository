@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Design of the authorization POC](#design-of-the-authorization-poc)
+  - [Scope of POC](#scope-of-poc)
+    - [Functional Requirements](#functional-requirements)
+      - [Assumptions](#assumptions)
+  - [Implementation Notes](#implementation-notes)
+    - [Database Schema](#database-schema)
+    - [Authorization rules](#authorization-rules)
+    - [API](#api)
+    - [Use case](#use-case)
+      - [Setup](#setup)
+      - [Expected output](#expected-output)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Design of the authorization POC
 
 SampleCompany is a service that provides a secure, customized platform

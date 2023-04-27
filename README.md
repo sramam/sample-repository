@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SampleCompany - Authorization POC](#samplecompany---authorization-poc)
+  - [Scope of POC](#scope-of-poc)
+    - [Functional Requirements](#functional-requirements)
+      - [Assumptions](#assumptions)
+  - [Design Document](#design-document)
+  - [Getting started](#getting-started)
+    - [Try it on localhost](#try-it-on-localhost)
+    - [Quality](#quality)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 [![ci](https://github.com/sramam/gsb-oso/actions/workflows/ci.yml/badge.svg)](https://github.com/sramam/gsb-oso/actions/workflows/ci.yml)
 
 # SampleCompany - Authorization POC
@@ -47,6 +62,7 @@ npm install
 npm test
 ```
 
+### Quality
 You can see the results of this in the [CI builds](https://github.com/sramam/gsb-oso/actions/workflows/ci.yml).
 The gist of it is that have 100% coverage.
 

@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Zero Downtime Migrations](#zero-downtime-migrations)
+  - [1. The Happy Path](#1-the-happy-path)
+  - [2. The Unhappy Path](#2-the-unhappy-path)
+  - [3. The Late To The Game Path](#3-the-late-to-the-game-path)
+  - [4. Stale Data](#4-stale-data)
+- [Conclusion](#conclusion)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Zero Downtime Migrations 
 
 Zero downtime migrations rely on embedding a _schema_ver field within the schema, and using that as a discriminant *on access*, to determine if a data object needs to be rolled forward or backwards.
