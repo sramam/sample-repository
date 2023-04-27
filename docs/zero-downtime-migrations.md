@@ -13,9 +13,9 @@
 
 ---
 
-- [Home](./index.md) 
-- [Challenge](./challenge.md)
-- [Response](./solution.md)
+- [Home](https://github.com/sramam/work-sample) 
+- [Challenge](https://github.com/sramam/work-samplechallenge.md)
+- [Response](https://github.com/sramam/work-samplesolution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
@@ -123,9 +123,9 @@ With that we can go back to our [regular programming](./index.md).
 
 ---
 
-- [Home](./index.md) 
-- [Challenge](./challenge.md)
-- [Response](./solution.md)
+- [Home](https://github.com/sramam/work-sample) 
+- [Challenge](https://github.com/sramam/work-samplechallenge.md)
+- [Response](https://github.com/sramam/work-samplesolution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---

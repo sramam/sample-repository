@@ -36,9 +36,9 @@
 
 ---
 
-- [Home](./index.md) 
-- [Challenge](./challenge.md)
-- [Response](./solution.md)
+- [Home](https://github.com/sramam/work-sample) 
+- [Challenge](https://github.com/sramam/work-samplechallenge.md)
+- [Response](https://github.com/sramam/work-samplesolution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
@@ -404,9 +404,9 @@ This is also available as a [github project view here](https://github.com/users/
 
 ---
 
-- [Home](./index.md) 
-- [Challenge](./challenge.md)
-- [Response](./solution.md)
+- [Home](https://github.com/sramam/work-sample) 
+- [Challenge](https://github.com/sramam/work-samplechallenge.md)
+- [Response](https://github.com/sramam/work-samplesolution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---

@@ -13,6 +13,15 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+---
+
+- [Home](https://github.com/sramam/work-sample) 
+- [Challenge](https://github.com/sramam/work-samplechallenge.md)
+- [Response](https://github.com/sramam/work-samplesolution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+
+---
+
 ## What/why is this?
 > I am actively interviewing for senior engineering roles.
 > Each interview process tries to establish a base-line in it's own way - some better than others.
@@ -58,9 +67,9 @@ Since a rabbit-hole was entered with the assignment, a highlights reel in summar
 
 ---
 
-- [Home](./index.md) 
-- [Challenge](./challenge.md)
-- [Response](./solution.md)
+- [Home](https://github.com/sramam/work-sample) 
+- [Challenge](https://github.com/sramam/work-samplechallenge.md)
+- [Response](https://github.com/sramam/work-samplesolution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
