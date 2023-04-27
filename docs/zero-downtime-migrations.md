@@ -11,6 +11,13 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+---
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+---
+
 # Zero Downtime Migrations 
 
 Zero downtime migrations rely on embedding a _schema_ver field within the schema, and using that as a discriminant *on access*, to determine if a data object needs to be rolled forward or backwards.
@@ -111,3 +118,10 @@ We have explored the design issues around zero-downtime pretty extensively. Impo
 a solution that works for the general migration use-case.
 
 With that we can go back to our [regular programming](./index.md).
+
+---
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+---

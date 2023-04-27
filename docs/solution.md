@@ -34,6 +34,13 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+---
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+---
+
 # Response
 
 This is a response to the [challenge described here](./challenge.md).

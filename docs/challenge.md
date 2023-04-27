@@ -15,6 +15,13 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+---
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+---
+
 ## Challenge Prompt
 
 Slack is a best-in-class SaaS communication tool for companies and organizations of any size to communicate within their team and across other teams. The data hierarchy of an Organization’s Slack Workspace can be considered in the form below.
@@ -239,3 +246,10 @@ What authorization controls might you consider as adjustments to APIs that might
 How would you structure the overall migration plan of accomplishing the introduction of such a feature, on the front-end and back-end, with a team of engineers focused on accomplishing this endeavor alongside you?
 
 [Response](./solution.md#5-migration-plan)
+
+---
+- [Home](./index.md) 
+- [Challenge](./challenge.md)
+- [Response](./solution.md)
+- [Source Code](https://github.com/sramam/work-sample)
+---
