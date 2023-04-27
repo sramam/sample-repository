@@ -17,9 +17,9 @@
 
 ---
 
-- [Home](https://sramam.github.io/work-sample/) 
-- [Challenge](https://sramam.github.io/work-sample/challenge.md)
-- [Response](https://sramam.github.io/work-sample/solution.md)
+- [Home](https://sramam.github.io/work-sample) 
+- [Challenge](https://sramam.github.io/challenge.md)
+- [Response](https://sramam.github.io/solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
@@ -251,9 +251,9 @@ How would you structure the overall migration plan of accomplishing the introduc
 
 ---
 
-- [Home](https://sramam.github.io/work-sample/) 
-- [Challenge](https://sramam.github.io/work-sample/challenge.md)
-- [Response](https://sramam.github.io/work-sample/solution.md)
+- [Home](https://sramam.github.io/work-sample) 
+- [Challenge](https://sramam.github.io/challenge.md)
+- [Response](https://sramam.github.io/solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---

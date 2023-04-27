@@ -50,11 +50,11 @@ Since a rabbit-hole was entered with the assignment, a highlights reel in summar
 
 ### 1. POC 
   [github link](https://github.com/sramam/work-sample)
-  - [design doc](https://github.com/sramam/work-sample/DESIGN.md)
-  - [Read me](https://github.com/sramam/work-sample/README.md)
+  - [design doc](https://github.com/sramam/work-sample/blob/main/DESIGN.md)
+  - [Read me](https://github.com/sramam/work-sample#readme)
   - Uses [oso](https://www.osohq.com/) as the authorization library
-  - Implements the [smallest possible POC of the policy requirement](https://github.com/sramam/work-sample/gsb.polar)
-  - Accomplishes [100% coverage](https://github.com/sramam/work-sample/README.md#quality)
+  - Implements the [smallest possible POC of the policy requirement](https://github.com/sramam/work-sample/blob/main/gsb.polar)
+  - Accomplishes [100% coverage](https://github.com/sramam/work-sample#quality)
 
 ### 2. Response to Challenge
   - [Approach](./solution.md#approach)
@@ -69,9 +69,9 @@ Since a rabbit-hole was entered with the assignment, a highlights reel in summar
 
 ---
 
-- [Home](https://github.com/sramam/work-sample) 
-- [Challenge](https://github.com/sramam/work-samplechallenge.md)
-- [Response](https://github.com/sramam/work-samplesolution.md)
+- [Home](https://sramam.github.io/work-sample) 
+- [Challenge](https://sramam.github.io/challenge.md)
+- [Response](https://sramam.github.io/solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---

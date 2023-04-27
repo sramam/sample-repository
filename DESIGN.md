@@ -1,8 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
-
 - [Design of the authorization POC](#design-of-the-authorization-poc)
   - [Scope of POC](#scope-of-poc)
     - [Functional Requirements](#functional-requirements)
@@ -19,9 +17,9 @@
 
 ---
 
-- [Home](https://github.com/sramam/work-sample)
-- [Challenge](https://github.com/sramam/work-samplechallenge.md)
-- [Response](https://github.com/sramam/work-samplesolution.md)
+- [Home](https://sramam.github.io/work-sample) 
+- [Challenge](https://sramam.github.io/challenge.md)
+- [Response](https://sramam.github.io/solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
@@ -129,9 +127,9 @@ teachers/tutors cannot create_sessions for classes they have NOT been added to
 
 ---
 
-- [Home](https://github.com/sramam/work-sample)
-- [Challenge](https://github.com/sramam/work-samplechallenge.md)
-- [Response](https://github.com/sramam/work-samplesolution.md)
+- [Home](https://sramam.github.io/work-sample) 
+- [Challenge](https://sramam.github.io/challenge.md)
+- [Response](https://sramam.github.io/solution.md)
 - [Source Code](https://github.com/sramam/work-sample)
 
 ---
