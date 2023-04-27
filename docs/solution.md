@@ -400,6 +400,7 @@ This is also available as a [github project view here](https://github.com/users/
 - App migration: Use current deployment mechanics?
 
 ---
+
 #### Project Risk Factors
 
 - zero-downtime migrations is a new capability at the infra layer we are building and the largest risk to the project.
@@ -407,8 +408,8 @@ This is also available as a [github project view here](https://github.com/users/
 - End-to-End testing. Is current capability sufficient?
 - Load testing. Is current capability sufficient?
 - Deployment mechanics. We are assuming existing CI/CD pipelines are sufficient.
----
 
+---
 ---
 
 Links:
