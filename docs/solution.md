@@ -352,6 +352,8 @@ Not by itself an authZ capability.
 
 ### [5. Migration plan](./challenge.md#question-5)
 
+> How would you structure the overall migration plan of accomplishing the introduction of such a feature, on the front-end and back-end, with a team of engineers focused on accomplishing this endeavor alongside you?
+
 At a high level, we will spell out the tasks, to help us scope the problem
 and possible team size. For the purposes of this exercise, we will assume that 
 the additional work in terms of the infrastructure is to be minimized. We are
