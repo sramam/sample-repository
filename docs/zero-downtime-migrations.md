@@ -17,7 +17,7 @@ Links:
 - [Home](https://sramam.github.io/work-sample/) 
 - [Challenge](https://sramam.github.io/work-sample/challenge)
 - [Response](https://sramam.github.io/work-sample/solution)
-- [zero-downtime migration](https://sramam.github.io/work-sample/zero-downtime-migration)
+- [zero-downtime migration](https://sramam.github.io/work-sample/zero-downtime-migrations)
 Git Repo:
 - [Source Code](https://github.com/sramam/work-sample)
 - [Readme](https://github.com/sramam/work-sample#readme)
@@ -132,7 +132,7 @@ Links:
 - [Home](https://sramam.github.io/work-sample/) 
 - [Challenge](https://sramam.github.io/work-sample/challenge)
 - [Response](https://sramam.github.io/work-sample/solution)
-- [zero-downtime migration](https://sramam.github.io/work-sample/zero-downtime-migration)
+- [zero-downtime migration](https://sramam.github.io/work-sample/zero-downtime-migrations)
 Git Repo:
 - [Source Code](https://github.com/sramam/work-sample)
 - [Readme](https://github.com/sramam/work-sample#readme)
